@@ -61,8 +61,11 @@ You need to deploy the frontend and backend as **two separate Vercel projects**.
    - **Project Name**: `task-management-frontend`
    - **Framework Preset**: Next.js
    - **Root Directory**: Click "Edit" and type: `frontend`
-   - **Build Command**: `pnpm run build` (default is fine)
+   - **Build Command**: Leave as default (`next build`)
+   - **Output Directory**: Leave as default (`.next`)
    - **Install Command**: `pnpm install`
+   
+   ⚠️ **Important**: Make sure Framework Preset is set to "Next.js" - this automatically handles the output directory
 
 3. **Add Environment Variables**
    ```
@@ -160,6 +163,7 @@ Then redeploy both projects in Vercel.
 
 - ✅ `.npmrc` (root) - Allows pnpm build scripts
 - ✅ `frontend/.npmrc` - Allows pnpm build scripts for frontend
+- ✅ `frontend/vercel.json` - Specifies correct Next.js output directory
 - ✅ This guide - Step-by-step deployment fix
 
 ---
