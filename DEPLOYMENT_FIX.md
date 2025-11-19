@@ -29,10 +29,13 @@ You need to deploy the frontend and backend as **two separate Vercel projects**.
 
 2. **Configure Backend Project**
    - **Project Name**: `task-management-backend`
-   - **Framework Preset**: Other
+   - **Framework Preset**: Other (will auto-detect Node.js)
    - **Root Directory**: Click "Edit" and type: `backend`
-   - **Build Command**: Leave empty
+   - **Build Command**: Leave empty (no build needed)
+   - **Output Directory**: Leave empty
    - **Install Command**: `pnpm install`
+   
+   ⚠️ **Important**: The backend is configured as a serverless function for Vercel
 
 3. **Add Environment Variables**
    ```
