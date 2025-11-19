@@ -84,5 +84,4 @@ Authorization: Bearer <token>
 - `404` - Not Found
 - `500` - Server Error
 
-## Postman Collection
-Import the provided Postman collection to test all endpoints.
+ 
