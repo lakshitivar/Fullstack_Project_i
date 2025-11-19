@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Task Management API with Node.js and MongoDB",
   "type": "module",
-  "main": "src/server.js",
+  "main": "api/index.js",
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "seed": "node src/scripts/seed.js"
+    "seed": "node src/scripts/seed.js",
+    "vercel-build": "echo 'No build step required'"
   },
   "keywords": [
     "nodejs",
